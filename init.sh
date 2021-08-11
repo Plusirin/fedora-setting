@@ -8,3 +8,9 @@ sudo dnf install make cmake g++ gcc automake fcitx5 fcitx5-autostart fcitx5-chin
 
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 sudo rpm -i https://filestore.fortinet.com/forticlient/downloads/forticlient_vpn_7.0.0.0018_x86_64.rpm
+
+sudo dnf install -y neovim python3-neovim npm
+sudo npm install --global yarn neovim
+sudo curl -sL install-node.now.sh/lts | bash
+git clone https://github.com/WenAnrong/nvim_config.git
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
